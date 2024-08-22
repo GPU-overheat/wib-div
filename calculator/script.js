@@ -4,6 +4,9 @@ const buttons = document.querySelectorAll("button");
 let calculationDone = false;
 
 function calculation(expression) {
+  // if (expression === '0')
+  //   console.log('bazaglo');
+    
   try {
     return new Function("return " + expression)();
   } catch (error) {
@@ -22,7 +25,7 @@ function operation(buttonValue) {
   } else if (buttonValue === "Del") {
     input.value = input.value.slice(0, -1);
   } else if (buttonValue === "=") {
-    input.value = calculation(input.value);
+    input.value = calculation(input.value) | '';
     calculationDone = true;
   } else {
     input.value += buttonValue;
