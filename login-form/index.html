@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="bg-animate" id="bg-animate"></div>
+		<div class="curved" id="curved"></div>
+
+		<div class="form-wrapper sign-in">
+			<form action="">
+				<h2>sign in</h2>
+				<div class="input-box">
+					<input type="text" required>
+					<label>username</label>
+				</div>
+				<div class="input-box">
+					<input type="password" required>
+					<label>password</label>
+				</div>
+				<div class="forgot-pass">
+					<a href="#">forgot password?</a>
+				</div>
+				<button type="submit">sign in</button>
+				<div class="sign-link">
+					<p>don't have an account? <a href="#" onclick="activeSignUp()">sign up</a></p>
+				</div>
+				<div class="social-platform">
+					<p>or sign in with</p>
+					<div class="social-icons">
+						<a href="#fb"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#gg"><i class="fa-brands fa-google"></i></a>
+						<a href="#x"><i class="fa-brands fa-x-twitter"></i></a>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="form-wrapper sign-up">
+			<form action="">
+				<h2>sign up</h2>
+				<div class="input-box">
+					<input type="text" required>
+					<label>username</label>
+				</div>
+				<div class="input-box">
+					<input type="text" required>
+					<label>email</label>
+				</div>
+				<div class="input-box">
+					<input type="password" required>
+					<label>password</label>
+				</div>
+				<button type="submit">sign up</button>
+				<div class="sign-link">
+					<p>aleady have an account? <a href="#" onclick="activeSignIn()">sign in</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="colors">
+		<span onclick="changeColor('#77dd77')" class="color" style="--clr:#77dd77;"></span>
+		<span onclick="changeColor('#f67599')" class="color" style="--clr:#f67599;"></span>
+		<span onclick="changeColor('#976ed7')" class="color active" style="--clr:#976ed7;"></span>
+		<span onclick="changeColor('#1db9c3')" class="color" style="--clr:#1db9c3;"></span>
+		<span onclick="changeColor('#ffb347')" class="color" style="--clr:#ffb347;"></span>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
